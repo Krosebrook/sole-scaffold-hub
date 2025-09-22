@@ -2,6 +2,10 @@ import NavigationEnhanced from "@/components/NavigationEnhanced";
 import HeroEnhanced from "@/components/HeroEnhanced";
 import Services from "@/components/Services";
 import About from "@/components/About";
+import Testimonials from "@/components/Testimonials";
+import Blog from "@/components/Blog";
+import Newsletter from "@/components/Newsletter";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import SkipNavigation from "@/components/SkipNavigation";
 import StructuredData from "@/components/StructuredData";
@@ -17,6 +21,10 @@ const Index = () => {
         <HeroEnhanced />
         <Services />
         <About />
+        <Testimonials />
+        <Blog />
+        <Newsletter />
+        <ContactForm />
       </main>
       <Footer />
       <ScrollToTop />

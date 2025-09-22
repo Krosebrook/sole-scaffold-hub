@@ -1,5 +1,5 @@
 import productMockup2 from "@/assets/product-mockup-2.png";
-import productionFacility from "@/assets/production-facility.jpg";
+import modernWorkspace from "@/assets/modern-workspace.jpg";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
@@ -38,8 +38,8 @@ const About = () => {
             <div className="relative">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src={productionFacility} 
-                  alt="SoleMuchBetter In-House Production Facility" 
+                  src={modernWorkspace} 
+                  alt="SoleMuchBetter Modern Production Workspace with Professional Equipment" 
                   className="w-full h-auto"
                 />
               </div>

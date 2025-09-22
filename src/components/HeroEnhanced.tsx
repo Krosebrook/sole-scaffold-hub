@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import productMockup1 from "@/assets/product-mockup-1.png";
+import brandTshirtModel from "@/assets/brand-tshirt-model.png";
 const Hero = () => {
   const handleSmoothScroll = (href: string) => {
     const element = document.querySelector(href);
@@ -75,7 +75,7 @@ const Hero = () => {
           {/* Right side */}
           <div className="relative animate-scale-in">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 hover:bg-white/20 transition-all duration-300 hover-scale">
-              <img src={productMockup1} alt="SoleMuchBetter custom branded merchandise products including corporate gifts and promotional items" className="w-full h-auto rounded-lg" loading="eager" />
+              <img src={brandTshirtModel} alt="SoleMuchBetter branded t-shirt showcase - custom apparel and branded merchandise" className="w-full h-auto rounded-lg" loading="eager" />
             </div>
             
             {/* Floating elements */}

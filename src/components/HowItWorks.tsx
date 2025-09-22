@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquare, CheckCircle, Factory, Package } from "lucide-react";
-import teamWorkspace from "@/assets/team-workspace.jpg";
+import businessEvent from "@/assets/business-event.jpg";
 
 const steps = [
   {
@@ -99,15 +99,15 @@ const HowItWorks = () => {
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img 
-                src={teamWorkspace} 
-                alt="SoleMuchBetter Production Team Workspace" 
+                src={businessEvent} 
+                alt="SoleMuchBetter Corporate Event and Networking Experience" 
                 className="w-full h-auto"
               />
             </div>
             <div className="absolute inset-0 bg-black/30 rounded-lg flex items-end">
               <div className="p-6 text-white">
-                <p className="text-sm font-semibold">Production Team at Work</p>
-                <p className="text-xs opacity-90">Quality craftsmanship for global delivery</p>
+                <p className="text-sm font-semibold">Corporate Events & Networking</p>
+                <p className="text-xs opacity-90">Building brands through professional gatherings</p>
               </div>
             </div>
           </div>

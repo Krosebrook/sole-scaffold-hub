@@ -36,12 +36,12 @@ const Hero = () => {
             {/* Enhanced description */}
             <div className="space-y-4 animate-fade-in">
               <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
-                SOLEMUCHBETTER Branding Solutions delivers the final touch to your 
-                Brand's journey. We offer <span className="text-primary font-semibold">distinctive high-impact merchandise</span> that elevates your brand beyond the norm.
+                SOLEMUCHBETTER Branding Solutions delivers <span className="text-primary font-semibold">distinctive high-impact merchandise</span> 
+                globally through our streamlined workflow: Quote → Approval → In-house Production → Shopify Fulfillment.
               </p>
               <p className="text-base text-white/80 max-w-2xl">
-                Like the "coda" in music and literature which concludes with unique flair, our products complete your 
-                brand's story with purpose and depth.
+                With zero geographic restrictions and our dedicated production facility, we complete your 
+                brand's story with purpose and global reach.
               </p>
             </div>
 
@@ -59,15 +59,15 @@ const Hero = () => {
             <div className="flex items-center gap-6 pt-4 text-white/70 text-sm animate-fade-in">
               <div className="flex items-center gap-2">
                 <span className="text-primary">✓</span>
-                Custom Solutions
+                Global Service
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-primary">✓</span>
-                Fast Turnaround
+                In-House Production
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-primary">✓</span>
-                Quality Guaranteed
+                Zero Minimums
               </div>
             </div>
           </div>

@@ -60,18 +60,18 @@ const Footer = () => {
             </div>
             
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-white/70">
-                <Mail className="w-5 h-5 text-primary" />
-                <span>hello@solemuchbetter.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/70">
-                <Phone className="w-5 h-5 text-primary" />
-                <span>1-800-SOLE-BETTER</span>
-              </div>
-              <div className="flex items-center gap-3 text-white/70">
-                <MapPin className="w-5 h-5 text-primary" />
-                <span>San Francisco, CA</span>
-              </div>
+            <div className="flex items-center gap-3 text-white/70">
+              <Mail className="w-5 h-5 text-primary" />
+              <span>hello@solemuchbetter.com</span>
+            </div>
+            <div className="flex items-center gap-3 text-white/70">
+              <Phone className="w-5 h-5 text-primary" />
+              <span>1-800-SOLE-BETTER</span>
+            </div>
+            <div className="flex items-center gap-3 text-white/70">
+              <MapPin className="w-5 h-5 text-primary" />
+              <span>Global Service Available</span>
+            </div>
             </div>
           </div>
 
@@ -101,9 +101,15 @@ const Footer = () => {
         <Separator className="my-12 bg-white/20" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          {/* Copyright */}
-          <div className="text-white/60 text-sm">
-            © 2024 SoleMuchBetter LLC. All rights reserved.
+          {/* Copyright & Disclaimer */}
+          <div className="text-white/60 text-sm space-y-1">
+            <div>© 2024 SoleMuchBetter LLC. All rights reserved.</div>
+            <div className="text-xs">
+              Powered by <a href="https://flashfusion.co" className="text-primary hover:text-primary/80" target="_blank" rel="noopener noreferrer">FlashFusion.co</a>
+            </div>
+            <div className="text-xs text-white/40">
+              SoleMuchBetter operates independently and is not directly affiliated with any other entities, except for our sister company relationship with FlashFusion.
+            </div>
           </div>
 
           {/* Social Links */}

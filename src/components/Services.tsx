@@ -62,9 +62,9 @@ const Services = () => {
               What we do.
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
-              At SOLEMUCHBETTER Branding Solutions, we specialize in helping businesses create lasting impressions through a range of 
-              services. SOLEMUCHBETTER offers custom promotional products, corporate gifting, on-site experience events, employee 
-              uniform programs, and corporate webstores.
+              At SOLEMUCHBETTER Branding Solutions, we specialize in helping businesses worldwide create lasting impressions 
+              through comprehensive branding services. From custom promotional products and corporate gifting to employee 
+              uniform programs and corporate webstores - we deliver globally with our streamlined production workflow.
             </p>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Services = () => {
               Services and benefits.
             </h3>
             <p className="text-xl text-gray-700">
-              SOLEMUCHBETTER takes pride in delivering exceptional customer service.
+              SOLEMUCHBETTER takes pride in delivering exceptional customer service globally with zero geographic restrictions.
             </p>
           </div>
           

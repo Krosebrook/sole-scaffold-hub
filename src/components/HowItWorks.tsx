@@ -1,82 +1,116 @@
-import { Button } from "@/components/ui/button";
-import { Upload, Wand2, ShoppingCart, CheckCircle } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessageSquare, CheckCircle, Factory, Package } from "lucide-react";
+import teamWorkspace from "@/assets/team-workspace.jpg";
 
 const steps = [
   {
-    number: 1,
-    icon: Upload,
-    title: "Upload Your Brand",
-    description: "Share your logo, brand guidelines, and design preferences with our secure platform."
+    icon: MessageSquare,
+    title: "Get Quote",
+    description: "Contact us with your custom branding needs. We'll provide a detailed quote with no geographic restrictions.",
+    step: "01"
   },
   {
-    number: 2,
-    icon: Wand2,
-    title: "AI Creates Mockups",
-    description: "Our AI generates custom product designs that perfectly match your brand identity."
-  },
-  {
-    number: 3,
-    icon: ShoppingCart,
-    title: "Review & Order",
-    description: "Approve designs, customize quantities, and place orders with transparent pricing."
-  },
-  {
-    number: 4,
     icon: CheckCircle,
-    title: "Quality Delivery",
-    description: "Receive professionally crafted merchandise with global tracking and quality guarantees."
+    title: "Customer Approval",
+    description: "Review and approve your custom design and quote. Make any necessary adjustments with our team.",
+    step: "02"
+  },
+  {
+    icon: Factory,
+    title: "In-House Production",
+    description: "Our dedicated production team creates your branded merchandise with quality control at every step.",
+    step: "03"
+  },
+  {
+    icon: Package,
+    title: "Shopify Fulfillment",
+    description: "Final products are processed through our Shopify system and shipped globally to your location.",
+    step: "04"
   }
 ];
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-gradient-hero">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            How It Works
+    <section id="how-it-works" className="py-24 bg-gray-50 relative">
+      {/* Large background text */}
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+        <h2 className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-bold text-gray-200 select-none">
+          workflow
+        </h2>
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-accent mb-6">
+            How it works.
           </h2>
-          <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            From brand upload to delivery, our streamlined process makes custom merchandise effortless
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            Our streamlined process ensures your custom branded merchandise is delivered efficiently, 
+            anywhere in the world.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {steps.map((step, index) => (
-            <div key={index} className="text-center relative">
-              {/* Connection line */}
-              {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-white/20 z-0">
-                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-white/20 rotate-45"></div>
-                </div>
-              )}
-              
-              <div className="relative z-10">
-                {/* Step number circle */}
-                <div className="mx-auto w-24 h-24 bg-primary rounded-full flex items-center justify-center mb-6 shadow-brand">
-                  <step.icon className="w-10 h-10 text-white" />
-                </div>
-                
-                {/* Step number badge */}
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-white text-primary rounded-full flex items-center justify-center text-sm font-bold">
-                  {step.number}
-                </div>
-                
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-white/70 leading-relaxed">
-                  {step.description}
-                </p>
+
+        {/* Process Steps */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {steps.map((step, index) => {
+            const Icon = step.icon;
+            return (
+              <Card key={index} className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 relative">
+                <CardHeader className="text-center pb-4">
+                  <div className="absolute -top-4 -right-4 bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
+                    {step.step}
+                  </div>
+                  <div className="mx-auto w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                    <Icon className="w-8 h-8 text-primary" />
+                  </div>
+                  <CardTitle className="text-lg font-bold text-accent leading-tight">
+                    {step.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 leading-relaxed text-sm">
+                    {step.description}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+
+        {/* Production Facility Showcase */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-accent">
+              Our Production Advantage.
+            </h3>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                With our dedicated in-house production facility, we maintain complete control over 
+                quality, timing, and customization. No outsourcing means faster turnaround and 
+                consistent results.
+              </p>
+              <p>
+                Our team of skilled professionals uses state-of-the-art equipment to bring your 
+                branded vision to life, backed by our partnership with FlashFusion technology.
+              </p>
+            </div>
+          </div>
+          
+          <div className="relative">
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src={teamWorkspace} 
+                alt="SoleMuchBetter Production Team Workspace" 
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="absolute inset-0 bg-black/30 rounded-lg flex items-end">
+              <div className="p-6 text-white">
+                <p className="text-sm font-semibold">Production Team at Work</p>
+                <p className="text-xs opacity-90">Quality craftsmanship for global delivery</p>
               </div>
             </div>
-          ))}
-        </div>
-        
-        <div className="text-center">
-          <Button variant="hero" size="lg" className="bg-white text-primary hover:bg-white/90">
-            Start Your First Project
-          </Button>
+          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import NavigationEnhanced from "@/components/NavigationEnhanced";
 import HeroEnhanced from "@/components/HeroEnhanced";
 import Services from "@/components/Services";
+import HowItWorks from "@/components/HowItWorks";
 import About from "@/components/About";
 import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
@@ -20,6 +21,7 @@ const Index = () => {
       <main id="main-content">
         <HeroEnhanced />
         <Services />
+        <HowItWorks />
         <About />
         <Testimonials />
         <Blog />

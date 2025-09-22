@@ -1,4 +1,5 @@
 import productMockup2 from "@/assets/product-mockup-2.png";
+import productionFacility from "@/assets/production-facility.jpg";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
@@ -22,25 +23,31 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  As a women-owned business, we take pride in delivering exceptional customer service and 
-                  offer zero minimum order quantities, making our services accessible to businesses of all sizes.
+                  As a women-owned business, we take pride in delivering exceptional customer service globally with 
+                  zero minimum order quantities, making our services accessible to businesses of all sizes worldwide.
                 </p>
                 <p>
-                  With a safe and ethical supply chain, we ensure that all our products meet the highest standards 
-                  of quality and responsibility. Additionally, we offer warehousing and fulfillment capabilities, 
-                  allowing us to manage kitting projects and ensure on-time delivery.
+                  Our workflow: Quote → Customer Approval → In-house Production Team → Shopify Fulfillment. 
+                  With our dedicated production facility and ethical supply chain, we ensure products meet the highest 
+                  standards while offering complete warehousing and fulfillment capabilities for on-time global delivery.
                 </p>
               </div>
             </div>
             
-            {/* Right content - Image */}
+            {/* Right content - Production Facility */}
             <div className="relative">
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src={productMockup2} 
-                  alt="About SOLEMUCHBETTER Branding Solutions" 
+                  src={productionFacility} 
+                  alt="SoleMuchBetter In-House Production Facility" 
                   className="w-full h-auto"
                 />
+              </div>
+              <div className="absolute inset-0 bg-black/40 rounded-lg flex items-end">
+                <div className="p-6 text-white">
+                  <p className="text-sm font-semibold">Our In-House Production Facility</p>
+                  <p className="text-xs opacity-90">Quote → Approval → Production → Fulfillment</p>
+                </div>
               </div>
             </div>
           </div>

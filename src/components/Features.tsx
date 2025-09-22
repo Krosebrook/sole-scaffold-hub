@@ -25,46 +25,50 @@ const features = [
   {
     icon: BarChart3,
     title: "Analytics Dashboard",
-    description: "Comprehensive insights into order patterns, popular products, and ROI metrics."
+    description: "Comprehensive insights into order patterns, popular products, ROI metrics."
   },
   {
     icon: Users,
     title: "Team Collaboration",
-    description: "Multi-level approval workflows with territory management and sales team coordination."
+    description: "Multi-level approval workflows with territory management and coordination."
   }
 ];
 
 const Features = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-4">
+    <section className="py-24 bg-gradient-card">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-accent mb-6">
             Why Choose SoleMuchBetter?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Powerful features designed to streamline your custom merchandise workflow
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Everything you need to create, manage, and deliver exceptional branded merchandise 
+            that elevates your company's professional image.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <Card key={index} className="border-0 shadow-card hover:shadow-brand transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center pb-4">
-                <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <feature.icon className="w-8 h-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl text-accent-foreground">
-                  {feature.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-muted-foreground leading-relaxed">
-                  {feature.description}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => {
+            const Icon = feature.icon;
+            return (
+              <Card key={index} className="bg-white/80 backdrop-blur-sm border-0 shadow-shadow-card hover:shadow-shadow-elegant transition-all duration-300 hover:-translate-y-2 group">
+                <CardHeader className="pb-4">
+                  <div className="w-14 h-14 bg-gradient-cta rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="w-7 h-7 text-white" />
+                  </div>
+                  <CardTitle className="text-xl font-bold text-accent mb-3">
+                    {feature.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -6,49 +6,51 @@
 
 @layer base {
   :root {
-    /* Brand Colors - SoleMuchBetter */
-    --brand-red: 0 81% 47%;          /* #C22E2E - Primary Red */
-    --brand-navy: 208 69% 17%;       /* #0C2D48 - Primary Navy Blue */
-    --brand-off-white: 0 0% 98%;     /* #FAFAFA - Secondary Off-White */
-    --brand-blue-gray: 209 50% 22%;  /* #1B3A57 - Accent Blue-Gray */
+    /* Brand Colors - Updated from logo */
+    --brand-red: 348 83% 58%;        /* #E53E3E - From logo red */
+    --brand-navy: 213 89% 20%;       /* #1A365D - From logo navy */
+    --brand-light: 210 20% 98%;      /* #F7FAFC - Clean light background */
+    --brand-neutral: 210 16% 93%;    /* #EDF2F7 - Neutral surfaces */
     
     /* Semantic Design Tokens */
-    --background: var(--brand-off-white);
-    --foreground: 220 13% 18%;       /* Body text color */
+    --background: 0 0% 100%;
+    --foreground: 213 89% 15%;       /* Darker navy for text */
 
     /* Component Tokens */
     --card: 0 0% 100%;
-    --card-foreground: var(--brand-navy);
+    --card-foreground: 213 89% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: var(--brand-navy);
+    --popover-foreground: 213 89% 15%;
 
-    --primary: var(--brand-red);              /* Red CTAs */
-    --primary-foreground: 0 0% 100%;          /* White text on red */
+    --primary: 348 83% 58%;          /* Brand red for CTAs */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 100%;                   /* White bg for secondary buttons */
-    --secondary-foreground: var(--brand-navy); /* Navy text on white */
+    --secondary: 210 20% 96%;        /* Very light background */
+    --secondary-foreground: 213 89% 15%;
 
-    --muted: 220 13% 95%;
-    --muted-foreground: 220 13% 60%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 46%;
 
-    --accent: var(--brand-blue-gray);         /* Accent elements */
+    --accent: 213 89% 20%;           /* Brand navy for accents */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: var(--brand-red);                 /* Focus rings in brand red */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 348 83% 58%;
     
-    /* Custom gradients and effects */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-navy)), hsl(var(--brand-blue-gray)));
-    --gradient-cta: linear-gradient(135deg, hsl(var(--brand-red)), hsl(0 81% 55%));
-    --shadow-brand: 0 10px 30px -10px hsl(var(--brand-red) / 0.2);
-    --shadow-card: 0 4px 20px -4px hsl(var(--brand-navy) / 0.1);
+    /* Modern gradients and effects */
+    --gradient-hero: linear-gradient(135deg, hsl(213 89% 20%) 0%, hsl(213 89% 25%) 50%, hsl(210 20% 98%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(348 83% 58%) 0%, hsl(348 83% 62%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    --shadow-brand: 0 20px 40px -12px hsl(348 83% 58% / 0.25);
+    --shadow-card: 0 4px 16px -4px hsl(213 89% 20% / 0.08);
+    --shadow-elegant: 0 8px 32px -8px hsl(213 89% 20% / 0.12);
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

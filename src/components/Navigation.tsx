@@ -7,87 +7,77 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Features", href: "#features" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Contact", href: "#contact" },
+    { label: "HOME", href: "/" },
+    { label: "ABOUT", href: "#about" },
+    { label: "SERVICES", href: "#services" },
+    { label: "SUPPLY CHAIN", href: "#supply-chain" },
+    { label: "BLOG", href: "#blog" },
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-border z-50">
-      <div className="max-w-6xl mx-auto px-6">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={brandLogo} alt="SoleMuchBetter Logo" className="h-10 w-auto" />
+            <img src={brandLogo} alt="SoleMuchBetter Logo" className="h-8 w-auto" />
             <div className="text-xl font-bold">
-              <span className="text-primary">Sole</span>
-              <span className="text-accent">MuchBetter</span>
+              <span className="text-white">SOLEMUCHBETTER</span>
+              <div className="text-sm text-white/70 font-normal">Branding Solutions</div>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-secondary-foreground hover:text-primary transition-colors font-medium"
+                className="text-white hover:text-primary transition-colors duration-200 font-medium text-sm tracking-wide"
               >
                 {item.label}
               </a>
             ))}
-          </div>
+          </nav>
 
-          {/* Desktop CTAs */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-secondary-foreground">
-              Sign In
-            </Button>
-            <Button variant="default">
-              Get Started
+          {/* CTA Button */}
+          <div className="hidden lg:flex">
+            <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-none font-bold tracking-wide">
+              CONTACT US
             </Button>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden text-white hover:text-primary transition-colors"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
+          <div className="lg:hidden py-4 border-t border-white/10">
+            <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-secondary-foreground hover:text-primary transition-colors font-medium px-4 py-2"
+                  className="text-white hover:text-primary transition-colors duration-200 font-medium text-sm tracking-wide"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
-              <div className="flex flex-col space-y-2 px-4 pt-4 border-t border-border">
-                <Button variant="ghost" className="justify-start">
-                  Sign In
-                </Button>
-                <Button variant="default" className="justify-start">
-                  Get Started
-                </Button>
-              </div>
-            </div>
+              <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-none font-bold tracking-wide w-fit">
+                CONTACT US
+              </Button>
+            </nav>
           </div>
         )}
       </div>
-    </nav>
+    </header>
   );
 };
 

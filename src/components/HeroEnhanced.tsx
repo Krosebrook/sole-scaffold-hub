@@ -1,17 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import productMockup1 from "@/assets/product-mockup-1.png";
-
 const Hero = () => {
   const handleSmoothScroll = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <section className="relative min-h-screen bg-gray-700 overflow-hidden">
+  return <section className="relative min-h-screen bg-gray-700 overflow-hidden">
       {/* Dark gray background */}
       <div className="absolute inset-0 bg-gray-700"></div>
       
@@ -21,10 +20,7 @@ const Hero = () => {
           {/* Left content */}
           <div className="space-y-8 animate-fade-in">
             {/* Trust Badge */}
-            <Badge variant="outline" className="text-white border-white/30 bg-white/10 backdrop-blur-sm hover-scale">
-              <span className="mr-2">👩‍💼</span>
-              Women-Owned Business
-            </Badge>
+            
             
             {/* Script headline */}
             <h2 className="text-4xl md:text-5xl font-script text-white italic animate-fade-in">
@@ -51,19 +47,10 @@ const Hero = () => {
 
             {/* Enhanced CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
-              <Button 
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-bold tracking-wide hover-scale shadow-xl hover:shadow-2xl transition-all duration-300"
-                onClick={() => handleSmoothScroll('#services')}
-              >
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-bold tracking-wide hover-scale shadow-xl hover:shadow-2xl transition-all duration-300" onClick={() => handleSmoothScroll('#services')}>
                 EXPLORE SERVICES
               </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-gray-700 px-8 py-4 rounded-lg font-bold tracking-wide hover-scale transition-all duration-300"
-                onClick={() => handleSmoothScroll('#contact')}
-              >
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-gray-700 px-8 py-4 rounded-lg font-bold tracking-wide hover-scale transition-all duration-300" onClick={() => handleSmoothScroll('#contact')}>
                 GET QUOTE
               </Button>
             </div>
@@ -88,12 +75,7 @@ const Hero = () => {
           {/* Right side */}
           <div className="relative animate-scale-in">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 hover:bg-white/20 transition-all duration-300 hover-scale">
-              <img 
-                src={productMockup1} 
-                alt="SoleMuchBetter custom branded merchandise products including corporate gifts and promotional items" 
-                className="w-full h-auto rounded-lg"
-                loading="eager"
-              />
+              <img src={productMockup1} alt="SoleMuchBetter custom branded merchandise products including corporate gifts and promotional items" className="w-full h-auto rounded-lg" loading="eager" />
             </div>
             
             {/* Floating elements */}
@@ -106,8 +88,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;

@@ -24,7 +24,7 @@ const steps = [
   {
     icon: Package,
     title: "Our Fulfillment",
-    description: "Final products are processed through our Shopify system and shipped globally to your location.",
+    description: "Final Products are processed through our system and shipped globally to your location.",
     step: "04"
   }
 ];

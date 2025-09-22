@@ -1,11 +1,11 @@
 import NavigationEnhanced from "@/components/NavigationEnhanced";
 import HeroEnhanced from "@/components/HeroEnhanced";
+import ShoesSection from "@/components/ShoesSection";
+import EventsSection from "@/components/EventsSection";
 import Services from "@/components/Services";
-import HowItWorks from "@/components/HowItWorks";
 import About from "@/components/About";
 import BrandShowcase from "@/components/BrandShowcase";
 import Testimonials from "@/components/Testimonials";
-import Blog from "@/components/Blog";
 import Newsletter from "@/components/Newsletter";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
@@ -21,12 +21,12 @@ const Index = () => {
       <NavigationEnhanced />
       <main id="main-content">
         <HeroEnhanced />
-        <Services />
-        <HowItWorks />
+        <ShoesSection />
+        <EventsSection />
         <About />
+        <Services />
         <BrandShowcase />
         <Testimonials />
-        <Blog />
         <Newsletter />
         <ContactForm />
       </main>

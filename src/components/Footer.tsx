@@ -86,7 +86,8 @@ const Footer = () => {
                   <li key={linkIndex}>
                     <a 
                       href={link.href}
-                      className="text-white/70 hover:text-primary transition-colors"
+                      className="text-white/70 hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:rounded"
+                      aria-label={`Navigate to ${link.label}`}
                     >
                       {link.label}
                     </a>

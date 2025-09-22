@@ -36,10 +36,11 @@ const Hero = () => {
           {/* Right side - Video placeholder or product image */}
           <div className="relative">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 hover:bg-white/20 transition-all duration-300">
-              <img 
+            <img 
                 src={productMockup1} 
-                alt="Custom branded merchandise showcase" 
+                alt="SoleMuchBetter custom branded merchandise products including corporate gifts and promotional items" 
                 className="w-full h-auto rounded-lg"
+                loading="eager"
               />
             </div>
           </div>

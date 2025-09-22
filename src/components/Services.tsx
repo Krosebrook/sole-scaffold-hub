@@ -58,7 +58,7 @@ const Services = () => {
         
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="max-w-4xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">
               What we do.
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed">
@@ -81,9 +81,9 @@ const Services = () => {
         
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-bold text-accent mb-6">
+            <h3 className="text-3xl md:text-4xl font-bold text-accent mb-6">
               Services and benefits.
-            </h2>
+            </h3>
             <p className="text-xl text-gray-700">
               SOLEMUCHBETTER takes pride in delivering exceptional customer service.
             </p>

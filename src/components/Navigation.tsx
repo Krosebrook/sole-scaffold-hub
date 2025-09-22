@@ -20,7 +20,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={brandLogo} alt="SoleMuchBetter Logo" className="h-8 w-auto" />
+            <img src={brandLogo} alt="SoleMuchBetter Branding Solutions - Women-owned corporate branding company logo" className="h-8 w-auto" />
             <div className="text-xl font-bold">
               <span className="text-white">SOLEMUCHBETTER</span>
               <div className="text-sm text-white/70 font-normal">Branding Solutions</div>
@@ -33,7 +33,8 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-white hover:text-primary transition-colors duration-200 font-medium text-sm tracking-wide"
+                className="text-white hover:text-primary transition-colors duration-200 font-medium text-sm tracking-wide focus:outline-none focus:ring-2 focus:ring-primary focus:rounded px-2 py-1"
+                aria-label={`Navigate to ${item.label}`}
               >
                 {item.label}
               </a>
@@ -50,7 +51,9 @@ const Navigation = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white hover:text-primary transition-colors"
+            className="lg:hidden text-white hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:rounded p-1"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

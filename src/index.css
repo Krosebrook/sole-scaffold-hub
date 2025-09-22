@@ -2,39 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* SoleMuchBetter Design System - Brand Colors & Tokens */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Brand Colors - SoleMuchBetter */
+    --brand-red: 0 81% 47%;          /* #C22E2E - Primary Red */
+    --brand-navy: 208 69% 17%;       /* #0C2D48 - Primary Navy Blue */
+    --brand-off-white: 0 0% 98%;     /* #FAFAFA - Secondary Off-White */
+    --brand-blue-gray: 209 50% 22%;  /* #1B3A57 - Accent Blue-Gray */
+    
+    /* Semantic Design Tokens */
+    --background: var(--brand-off-white);
+    --foreground: 220 13% 18%;       /* Body text color */
 
+    /* Component Tokens */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: var(--brand-navy);
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: var(--brand-navy);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: var(--brand-red);              /* Red CTAs */
+    --primary-foreground: 0 0% 100%;          /* White text on red */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 100%;                   /* White bg for secondary buttons */
+    --secondary-foreground: var(--brand-navy); /* Navy text on white */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 13% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: var(--brand-blue-gray);         /* Accent elements */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: var(--brand-red);                 /* Focus rings in brand red */
+    
+    /* Custom gradients and effects */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-navy)), hsl(var(--brand-blue-gray)));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--brand-red)), hsl(0 81% 55%));
+    --shadow-brand: 0 10px 30px -10px hsl(var(--brand-red) / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(var(--brand-navy) / 0.1);
 
     --radius: 0.5rem;
 

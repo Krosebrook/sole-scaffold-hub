@@ -62,6 +62,17 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        "brand-card": "12px",
+        "brand-button": "8px",
+        "brand-hero": "24px",
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-cta": "var(--gradient-cta)",
+      },
+      boxShadow: {
+        "brand": "var(--shadow-brand)",
+        "card": "var(--shadow-card)",
       },
       keyframes: {
         "accordion-down": {

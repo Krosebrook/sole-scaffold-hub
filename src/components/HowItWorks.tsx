@@ -23,7 +23,7 @@ const steps = [
   },
   {
     icon: Package,
-    title: "Shopify Fulfillment",
+    title: "Our Fulfillment",
     description: "Final products are processed through our Shopify system and shipped globally to your location.",
     step: "04"
   }
